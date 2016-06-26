@@ -31,7 +31,7 @@ with(PowerObservation, plot(Time, Voltage, type = "l", xlab = "datetime", ylab =
 with(PowerObservation, plot(Time, Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering"))
 with(PowerObservation, lines(Time, Sub_metering_2, col = "red"))
 with(PowerObservation, lines(Time, Sub_metering_3, col = "blue"))
-legend("topright", col = c("black", "red", "blue"), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = c(1, 1), text.width = strwidth("10,000,000,000,000,000"), y.intersp = 1.3 , bty = "n")
+legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = c(1, 1), text.width = strwidth("10,000,000,000,000,000"), y.intersp = 1.3 , bty = "n")
 
 #Global Reactive Power Graphic
 with(PowerObservation, plot(Time, Global_reactive_power, type = "l", xlab = "datetime"))
